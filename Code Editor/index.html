@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Real-Time Code Editor</h2>
+
+    <div class="container">
+        
+        <div class="editor-box">
+            <label>HTML</label>
+            <textarea id="htmlCode" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="editor-box">
+            <label>CSS</label>
+            <textarea id="cssCode" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="editor-box">
+            <label>JavaScript</label>
+            <textarea id="jsCode" onkeyup="run()"></textarea>
+        </div>
+    </div>
+
+    <iframe id="output"></iframe>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
